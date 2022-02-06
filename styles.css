@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+.ability.undefined {
+  display: none;
+}
+
+.pokedex-header {
+  padding: 1rem;
+  background-image: url(/pokemon-header.jpeg);
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.pokemon {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem gray;
+  overflow: hidden;
+}
+
+.pokemon-header {
+  background-color: rgb(212, 212, 212);
+  padding: 0.25rem 1rem;
+  position: relative;
+  color: white;
+}
+
+.pokemon-content {
+  padding: 2rem 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.pokemon-type {
+  width: fit-content;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid white;
+}
+
+#pokemon-header_pokeball {
+  width: 6rem;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  opacity: 0.5;
+}
+
+.pokemon-name {
+  margin-bottom: 1rem;
+}
+
+.pokemon-image {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-stat-bar {
+  width: 80%;
+  color: aqua;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.pokemon-stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+  height: min-content;
+}
+
+.pokemon-stat p {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.abilities.grid {
+  margin: 1rem 0;
+  margin-top: 0.25rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+.ability {
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+  color: white;
+}
+
+.ability-title {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+  text-decoration: underline;
+}
+
+/* form */
+
+.search-form input[type="text"] {
+  padding: 0.45rem 0.5rem;
+  width: 25rem;
+}
+
+.search-form input[type="submit"] {
+  background-color: white;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+}
