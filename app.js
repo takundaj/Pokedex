@@ -4,11 +4,11 @@ const abilities = document.querySelectorAll(".ability");
 
 const promises = [];
 
-const pokemonBox = []
+const pokemonBox = [];
 
 const fetchPokemon = () => {
   container.innerHTML = "";
-  for (i = 1; i <= 50; i++) {
+  for (i = 1; i <= 75; i++) {
     //Get api point
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     //fetch pokemon data from pokeapit
@@ -35,7 +35,7 @@ const fetchPokemon = () => {
         abilities: data.abilities.map((ab) => ab["ability"]["name"]),
       };
 
-      pokemonBox.push(pokemon)
+      pokemonBox.push(pokemon);
       displayPokemon(pokemon);
     });
   });
