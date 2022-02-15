@@ -8,7 +8,7 @@ const pokemonBox = [];
 
 const fetchPokemon = () => {
   container.innerHTML = "";
-  for (i = 1; i <= 75; i++) {
+  for (i = 1; i <= 50; i++) {
     //Get api point
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     //fetch pokemon data from pokeapit
