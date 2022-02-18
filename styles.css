@@ -26,7 +26,7 @@ h4 {
 
 .container {
   width: 80%;
-  margin: auto;
+  margin: 3vw auto;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
