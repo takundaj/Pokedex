@@ -42,7 +42,7 @@ const fetchPokemon = () => {
 };
 
 const searchPokemon = (input) => {
-  const ext = input.trim();
+  const ext = input.trim().lowerCase();
   //Get api point
   const url = `https://pokeapi.co/api/v2/pokemon/${ext}`;
   //fetch pokemon data from pokeapit
