@@ -53,8 +53,16 @@ h4 {
   box-shadow: 0 0 1rem gray;
   overflow: hidden;
   max-width: 23rem;
-  min-width: 22rem;
+  min-width: 18rem;
   margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .pokemon {
+    max-width: 23rem;
+    min-width: 20rem;
+    margin: auto;
+  }
 }
 
 .pokemon-header {
